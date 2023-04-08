@@ -1,7 +1,7 @@
 import React from "react";
 import { useLoaderData } from "react-router-dom";
 import ProductCard from "./Cards/ProductCard";
-import addToDb from "../Utils/fakeDB";
+import { addToDb } from "../Utils/fakeDB";
 
 const Shop = () => {
   // card button handler
