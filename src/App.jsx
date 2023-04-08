@@ -1,5 +1,18 @@
-const App = () => {
-  return <h1>Welcome to HeroGadget</h1>
-}
+import { Outlet } from "react-router-dom";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import Home from "./components/Home";
 
-export default App
+const App = () => {
+  return (
+    <>
+      <Header />
+      <div className="min-h-[calc(100vh-137px)]">
+        <Outlet />
+      </div>
+      <Footer />
+    </>
+  );
+};
+
+export default App;
